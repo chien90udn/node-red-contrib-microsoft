@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richard-vu/node-red-contrib-line-work.git"
+    "url": "git+https://github.com/Truong-Truong/node-red-contrib-line-work-send-msg.git"
   },
   "keywords": [
     "node-red"
@@ -21,7 +21,7 @@
   "author": "LQT",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/richard-vu/node-red-contrib-line-work-send-msg/issues"
+    "url": "https://github.com/Truong-Truong/node-red-contrib-line-work-send-msg/issues"
   },
-  "homepage": "https://github.com/richard-vu/node-red-contrib-line-work-send-msg#readme"
+  "homepage": "https://github.com/Truong-Truong/node-red-contrib-line-work-send-msg#readme"
 }
