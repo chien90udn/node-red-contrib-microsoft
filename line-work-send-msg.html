@@ -1,0 +1,67 @@
+<script type="text/javascript">
+  RED.nodes.registerType('line-work-send-msg',{
+      category: 'LINE',
+      color: '#1ad823',
+      defaults: {
+          name: {value:"Send Message"},
+          apiid: { value: 'jp1ZBQAXNOWkp', required: true },
+          consumerkey: { value: 'l6P2uT54rlK7nXGlgm0J', required: true},
+          token: { value: 'AAABBNHPC6hQKrvKo5W394MEi0VdEaiUzXRYmigPO6XtbCT3NFKCMcbw66QMW+ysel60o00oEvEvdfvF7J5d4WJMFxRqX3paWQlJyozeNEWhVLvquORXAJzVeK4pyUYZdDNfYomUOX81oSoj/MIsP1gPymuXJvAgOncPts1OjMiQ2lkiopyx2Y/I7dOfsEU9uHVcI9j+JKtYK+bPpbXHDMXjcfi+zTe5+/P3szQ+qnfbFEyQEQVv8VhWS/h4MAq2pofBsvJsSILk4S4WillFkH4yWTdr2HJoWnws7JpVvT714fbdvLvwK6gpaZcHvHE+uYUHhDoBOrfxdnYcJ0MMRq7jRsPF3IQ+7NyU3G9t8M+zDCYB', required: true },
+          botid: { value: '2686805', required: true },
+          // accounts: { value: '', required: false },
+          roomid: { value: '113933280', required: true },
+          message: { value: 'alibaba', required: true }
+      },
+      inputs:1,
+      outputs:1,
+      icon: "icon.png",
+      label: function() {
+          return this.name||"Send Message";
+      }
+  });
+</script>
+
+<script type="text/html" data-template-name="line-work-send-msg">
+  <div class="form-row">
+    <label for="node-input-name">Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+</div>
+  <div class="form-row">
+    <label><i class="fa fa-cog"></i> Config</label>
+  </div>
+  <div class="form-row">
+    <label for="node-input-apiid">Api Id</label>
+    <input type="text" id="node-input-apiid" placeholder="Api Id">
+  </div>
+  <div class="form-row">
+    <label for="node-input-consumerkey">Consumer Key</label>
+    <input type="text" id="node-input-consumerkey" placeholder="Consumer Key">
+  </div>
+  <div class="form-row">
+    <label for="node-input-token">Token</label>
+    <input type="text" id="node-input-token" placeholder="Token">
+  </div>
+  <div class="form-row">
+    <label for="node-input-botid">Bot Id</label>
+    <input type="text" id="node-input-botid" placeholder="Bot Id">
+  </div>
+  <!-- <div class="form-row">
+    <label for="node-input-accounts">Accounts</label>
+    <input type="text" id="node-input-accounts" placeholder="Accounts">
+  </div> -->
+  <div class="form-row">
+    <label for="node-input-roomid">Room Id</label>
+    <input type="text" id="node-input-roomid" placeholder="Room Id">
+  </div>
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-commenting-o"></i> Message</label>
+  </div>
+  <div class="form-row">
+    <label for="node-input-message">Message</label>
+    <input type="text" id="node-input-message" placeholder="Message">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="line-work-send-msg">
+  <p>A simple node that send the message to line work room</p>
+</script>
