@@ -18,7 +18,7 @@
       "lower-case": "line-work-send-msg.js"
     }
   },
-  "author": "LQT",
+  "author": "truonglq",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Truong-Truong/node-red-contrib-line-work-send-msg/issues"
