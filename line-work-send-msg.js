@@ -3,8 +3,6 @@ module.exports = function (RED) {
     RED.nodes.createNode(this, config);
     var node = this;
     node.on("input", function (msg) {
-      // msg.payload = msg.payload.events[0].replyToken;
-      // msg.replyToken = msg.payload.events[0].replyToken;
       let roomId = config.roomid;
       let apiId = config.apiid;
       let botId = config.botid;
