@@ -8,8 +8,8 @@
           consumerkey: { value: '', required: true},
           token: { value: '', required: true },
           botid: { value: '', required: true },
-          // accounts: { value: '', required: false },
-          roomid: { value: '', required: true },
+          roomid: { value: '', required: false },
+          accountid: { value: '', required: false },
           message: { value: '', required: true }
       },
       inputs:1,
@@ -45,20 +45,13 @@
     <label for="node-input-botid">Bot Id</label>
     <input type="text" id="node-input-botid" placeholder="Bot Id">
   </div>
-  <!-- <div class="form-row">
-    <label for="node-input-accounts">Accounts</label>
-    <input type="text" id="node-input-accounts" placeholder="Accounts">
-  </div> -->
+  <div class="form-row">
+    <label for="node-input-accountid">Account Id</label>
+    <input type="text" id="node-input-accountid" placeholder="Account Id">
+  </div>
   <div class="form-row">
     <label for="node-input-roomid">Room Id</label>
     <input type="text" id="node-input-roomid" placeholder="Room Id">
-  </div>
-  <div class="form-row">
-    <label for="node-input-name"><i class="fa fa-commenting-o"></i> Message</label>
-  </div>
-  <div class="form-row">
-    <label for="node-input-message">Message</label>
-    <input type="text" id="node-input-message" placeholder="Message">
   </div>
 </script>
 
