@@ -1,27 +1,29 @@
 {
-  "name": "node-red-contrib-line-work-send-msg",
-  "version": "0.0.7",
-  "description": "node-red-contrib-line-work-send-msg",
+  "name": "node-red-contrib-microsoft",
+  "version": "0.0.1",
+  "description": "node-red-contrib-microsoft",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Truong-Truong/node-red-contrib-line-work-send-msg.git"
+    "url": "git+git@github.com:chien90udn/node-red-contrib-microsoft.git"
   },
   "keywords": [
     "node-red"
   ],
   "node-red": {
     "nodes": {
-      "lower-case": "line-work-send-msg.js"
+      "lower-case": "microsoft-create-task.js"
     }
   },
-  "author": "truonglq",
+  "author": "PhanTom",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Truong-Truong/node-red-contrib-line-work-send-msg/issues"
-  },
-  "homepage": "https://github.com/Truong-Truong/node-red-contrib-line-work-send-msg#readme"
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  }
 }

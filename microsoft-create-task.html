@@ -1,0 +1,44 @@
+<script type="text/html" data-template-name="microsoft-create-task">
+  <div class="form-row">
+    <label for="node-input-name">Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+</div>
+  <div class="form-row">
+    <label><i class="fa fa-cog"></i>Config</label>
+  </div>
+  <div class="form-row">
+    <label for="node-input-planId">planId</label>
+    <input type="text" id="node-input-planId" placeholder="planId">
+  </div>
+  <div class="form-row">
+    <label for="node-input-title">title</label>
+    <input type="text" id="node-input-title" placeholder="title">
+  </div>
+  <div class="form-row">
+    <label for="node-input-startDateTime">startDateTime</label>
+    <input type="text" id="node-input-startDateTime" placeholder="startDateTime">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="microsoft-create-task">
+  <p>A simple node that send the message to line work room</p>
+</script>
+
+<script type="text/javascript">
+  RED.nodes.registerType('microsoft-create-task',{
+      category: 'Microsoft',
+      color: '#1ad823',
+      defaults: {
+          name: {value:"Create Task"},
+          planId: { value: '', required: true },
+          title: { value: '', required: true},
+          startDateTime: { value: '', required: true }
+      },
+      inputs:1,
+      outputs:1,
+      icon: "icon.png",
+      label: function() {
+          return this.name||"Create Task";
+      }
+  });
+</script>
